@@ -95,7 +95,7 @@ Now run `catkin_make` inside the `catkin_ws` folder in order to build the worksp
 Finally, download our project in the `src` folder with:
 
 ```bash
-git clone https://github.com/MickyMori/Lab_assignment_2.git
+git clone https://github.com/manudelu/ExpRob_Assignment2.git
 ```
 
 Build with `catkin_make --only-pkg-with-deps lab_assignment_2` and run the whole project by running the launch file:
