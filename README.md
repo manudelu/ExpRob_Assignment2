@@ -1,7 +1,9 @@
-Experimental Robotics Laboratory
+Experimental Robotics Laboratory 🤖
+======================================
+Autonomous Robot Navigation
 ======================================
 
-Project Description
+Project Description 📎
 -------------------------
 
 The aim of this project is to develop a ROS package that uses PDDL and ROSPlan to guide a mobile robot equipped with a camera to find all markers while autonomously avoid any obstacle on its path. The robot should then return to its initial position.
@@ -14,7 +16,7 @@ The markers are placed at known positions:
   
 The initial position is situated at (x = 0.0, y = 1.0).
 
-Team Members
+Team Members 👨‍🔬
 -------------
 
 |    |Name |Surname |ID |
@@ -26,7 +28,7 @@ Team Members
 | 5 | Andrea | Bolla | S4482930 |
 
 
-Create and setup a Catkin Workspace
+Create and setup a Catkin Workspace 🧰
 --------------------------------
 
 A catkin (ROS) workspace is a directory in which you can create or modify existing catkin packages. We will label our catkin workspace `catkin_ws`. To create the catkin workspace, type the following commands in the Terminal:
@@ -52,7 +54,7 @@ Remember to add this source command to your `.bashrc` file under the source line
 gedit ~/.bashrc
 ```
 
-How to run the simulation
+How to run the simulation ⌨️
 -------------------------
 
 In order to be able to run this simulation it will be needed to install the needed dependancies for the planning and for the navigation beforehand.
@@ -104,7 +106,7 @@ Build with `catkin_make --only-pkg-with-deps lab_assignment_2` and run the whole
 roslaunch lab_assignment_2 assignment.launch
 ```
 
-Flowchart
+Flowchart 🎞️
 -----------------------
 
 ### Logic Node (logic_node.cpp)
@@ -140,7 +142,7 @@ Create an `Action Client` that:
   
 ![Flowchart of the robot behaviour](lab_assignment_2/media/Assignment2.png)
 
-Simulation
+Simulation 💻
 -----------------------
 
 Here is the simulated behaviour of the robot, provided with a window that shows what the robot's camera is capturing.
@@ -148,7 +150,7 @@ Here is the simulated behaviour of the robot, provided with a window that shows 
 https://github.com/MickyMori/Lab_assignment_2/assets/104144305/3842905a-2b04-4348-b604-f1e51f4b2101
 
 
-Possible Improvements
+Possible Improvements 🏷️
 -----------------------
 
 * Only one marker at a time can be seen by the robot, so it will look for them in the order specified in the problem file, a possible improvement could be to check them as found even if they are encountered beforehand, or to calculate an optimal path to achieve the goal of reaching every marker in less time.
